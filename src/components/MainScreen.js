@@ -44,6 +44,19 @@ export default class MainScreen extends React.Component
                 <Tab heading={ <TabHeading style={{backgroundColor:'white'}}><Icon name="mail" style={{color:'#3BB9FF'}} /></TabHeading> }>
                 </Tab>
             </Tabs>
+            <Fab style={{ backgroundColor: '#3BB9FF', marginBottom: 30 }} position="bottomRight">
+                <Icon name="create" />
+            </Fab>
+            <Footer style={{backgroundColor: 'white'}}>
+                <FooterTab style={{backgroundColor: 'white'}}>
+                    <Left>
+                        <Text style={{fontSize: 20, color: '#3BB9FF', fontWeight: 'bold'}}>  All    Mentions</Text>
+                    </Left>
+                    <Right>
+                        <Icon style={{ marginRight: 10, color: '#3BB9FF' }} name='settings'></Icon>
+                    </Right>
+                </FooterTab>         
+            </Footer>
         </Container>
     );
   }
