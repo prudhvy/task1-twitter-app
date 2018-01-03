@@ -38,6 +38,19 @@ export default class MainScreen extends React.Component
                 <Tab heading={ <TabHeading style={{backgroundColor:'white'}}><Icon name="home" style={{color:'#3BB9FF'}} /></TabHeading> }>
                 </Tab>
                 <Tab heading={ <TabHeading style={{backgroundColor:'white'}} ><Icon name="search" style={{color:'#3BB9FF'}} /></TabHeading>}>
+                    <Container>
+                        <TouchableOpacity onPress={this.context.Header}>
+                            <Header searchBar rounded style={{backgroundColor: '#3BB9FF'}} >
+                                <Item>
+                                    <Icon name="search" />
+                                    <Input placeholder="Search Twitter" />
+                                </Item>
+                                <Button transparent>
+                                    <Text>Search</Text>
+                                </Button>
+                            </Header>
+                        </TouchableOpacity>
+                    </Container>
                 </Tab>
                 <Tab heading={ <TabHeading style={{backgroundColor:'white'}}><Icon name="notifications" style={{color:'#3BB9FF'}}/></TabHeading>}>
                     <Container style={{flex: 1,justifyContent: 'center',alignItems: 'center'}}>
