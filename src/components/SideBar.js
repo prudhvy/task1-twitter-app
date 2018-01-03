@@ -6,8 +6,7 @@ export default class SideBar extends React.Component
 {
     render() 
     {
-        return 
-        (
+        return (
         <Container>
             <Content>
                 <Card>

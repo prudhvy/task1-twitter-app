@@ -1,5 +1,5 @@
 import React from 'react';
-import {Body,Button,Content,Card,CardItem,Container,Fab,Footer,FooterTab,Header,Item,Input,Left,Right,Text,Tab,Title,Thumbnail,TabHeading,ScrollableTab} from 'native-base';
+import {Body,Button,Content,Card,CardItem,Container,Fab,Footer,FooterTab,Header,Icon,Item,Input,Left,Right,Text,Tab,Tabs,Title,Thumbnail,TabHeading,ScrollableTab} from 'native-base';
 import {Image,StyleSheet,TouchableOpacity,View} from 'react-native';
 import {PropTypes} from 'prop-types';
 export default class MainScreen extends React.Component 
@@ -18,8 +18,7 @@ export default class MainScreen extends React.Component
     };
     render() 
     {
-    return 
-    (
+    return (
         <Container>
             <View >
                 <Header hasTabs style={{backgroundColor: "white"}}>
